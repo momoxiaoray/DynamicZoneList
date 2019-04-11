@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_16">
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="哟哟哟哟"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintLeft_toRightOf="@+id/item_icon"
+        app:layout_constraintRight_toLeftOf="@+id/item_zan"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3分钟前"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintLeft_toLeftOf="@+id/item_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_name"/>
+
+
+    <TextView
+        android:id="@+id/item_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_video_comment"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_6"
+        android:text="0"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/item_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_icon"/>
+
+
+    <TextView
+        android:id="@+id/item_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_2"
+        android:drawableLeft="@mipmap/icon_video_zan"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_6"
+        android:text="0"
+        android:textColor="#999999"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintBottom_toBottomOf="@+id/item_icon"
+        app:layout_constraintRight_toLeftOf="@+id/item_comment"
+        app:layout_constraintTop_toTopOf="@+id/item_icon"/>
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="adsdasdasdasdasd"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="@+id/item_time"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_icon"/>
+
+    <TextView
+        android:id="@+id/item_content_reply"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@drawable/dynamic_comment_bg"
+        android:text="asdasdasdasdasd"
+        app:layout_constraintLeft_toLeftOf="@+id/item_content"
+        app:layout_constraintRight_toRightOf="@+id/item_content"
+        app:layout_constraintTop_toBottomOf="@+id/item_content"/>
+
+</android.support.constraint.ConstraintLayout>
